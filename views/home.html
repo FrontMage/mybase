@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <title>(╯‵□′)╯︵┻━┻ -- CLAN</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <!-- font awesome 核心 CSS 文件 -->
+    <link href="http://cdn.bootcss.com/font-awesome/3.0.0/css/font-awesome.css" rel="stylesheet">
+
+    <!-- jQuery文件 -->
+    <script src="http://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+
+    <!-- Bootstrap 核心 JavaScript 文件 -->
+    <script src="http://cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <!-- favicon -->
+    <link rel="icon" href="../public/images/favicon/cat-face.ico">
+
+    <!-- some styling for sidbar & contents -->
+    <link rel="stylesheet" href="../public/css/home.css">
+
+    <!-- main page scripts -->
+    <script src="../public/scripts/main.js"></script>
+</head>
+
+<body>
+    <!-- so a navbar is needed -->
+    <nav class="navbar navbar-inverse navbar-fixed-top bg-faded">
+        <div class="container">
+
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="#" class="navbar-brand">LOGO</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="main-navbar">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">主页</a></li>
+                    <li><a href="#" id="sidebar-toggle-btn">关于</a></li>
+                    <li><a href="#" id="toolbar-toggle-btn">工具</a></li>
+                    <li><a href="#" id="feedback-toggle-btn">反馈</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">链接</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">some profile</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- Everything goes in the wrapper -->
+    <div id="wrapper">
+
+        <!-- Then build a sidebar to put my resume -->
+        <div id="sidebar">
+            <div id="sidebar-wrapper">
+                <img src="../public/images/head/head-1.jpg" alt="my photo" class="img-circle head" />
+                <blockquote>
+                    <h3>NO//WHERE</h3>
+                    <footer>NOW//HERE</footer>
+                </blockquote>
+                <dl>
+                    <dt>作者</dt>
+                    <dd><i class="icon-user"></i>-Front Mage--一个前端魔法师~</dd>
+                    <dt>联系</dt>
+                    <dd><i class="icon-comment"></i>-QQ: 1124063653</dd>
+                    <dd><i class="icon-envelope-alt"></i>-Email: xbgxwh@163.com</dd>
+                    <dd><i class="icon-phone"></i>-Cell: <a href="javascript:void(0)" id="cell-btn">Click Me</a></dd>
+                    <dt>代码</dt>
+                    <dd><i class="icon-github"></i>-Github: <a href="https://github.com/FrontMage" target="blank">FrontMage</a></dd>
+                    <dd><i class="icon-facebook"></i>-<a href="https://segmentfault.com/blog/frontmage" target="blank">SegementFault</a></dd>
+                    <dt>简历</dt>
+                    <dd><i class="icon-ok"></i>-<a href="lago-resume.html" target="blank">拉勾版</a></dd>
+                </dl>
+            </div>
+        </div>
+
+        <!-- Contents goes into main-content -->
+        <div class="container" id="main-content">
+            <div class="row">
+
+                <div class="col-xs-12 col-md-4" id="content-left">
+
+                    <blockquote>
+                        <p>You don't have to be a genius to code. You just need to be certain.</p>
+                        <footer>Mage.F</footer>
+                        <a href="#" id="change-content-quote"><i class="icon-repeat"></i></a>
+                    </blockquote>
+
+                    <div id="message-board">
+                        <h4 class="text-primary">留言板</h4>
+                        <dl>
+                            <dt class="text-info">看起来还不错~</dt>
+                            <dd class="text-right text-default">----Mage.F</dd>
+                        </dl>
+                    </div>
+
+                    <div class="message-board-form-wrapper">
+                        <form class="form-horizontal" id="message-board-form">
+                            <div class="form-group">
+                                <label for="message-board-message" class="col-sm-4 control-label text-info">留言内容：</label>
+                                <div class="col-sm-7">
+                                    <input type="text" name="message" class="form-control" id="message-board-message" required/>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="message-board-user" class="col-sm-4 control-label text-info">你是：</label>
+                                <div class="col-sm-7">
+                                    <input type="text" name="user" class="form-control" id="message-board-user" required/>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-offset-6">
+                                    <button type="submit" class="btn btn-default col-sm-9" id="message-board-form-submit">留言</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+                <div class="text-info col-xs-4">
+                    <button class="btn btn-primary" data-toggle="modal" data-target="#modal-test">modal test</button>
+                    <div class="modal fade" id="modal-test">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button class="close" data-dismiss="modal">&times;</button>
+                                    <h3>modal-test</h3>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="modal-test"/>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button class="btn btn-block btn-success">modal-test</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h1 class="text-danger col-xs-4 text-right">Here puts some contents</h1>
+            </div>
+        </div>
+
+        <!-- toolbar goes rigtht of the page -->
+        <div id="toolbar">
+            <div id="toolbar-wrapper">
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

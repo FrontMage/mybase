@@ -1,0 +1,83 @@
+body{
+    color: #B9B9B9;
+    overflow-y: hidden;
+}
+#wrapper{
+    margin-top: 50px;
+}
+/* sidebar & toolbar */
+#sidebar, #toolbar{
+    z-index: 1;
+    position: absolute;
+    width: 0px;
+    height: 100%;
+    background-color: rgb(34, 34, 34);
+    opacity: 0.9;
+    overflow-x: hidden;
+}
+
+#sidebar-wrapper, #toolbar-wrapper{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#sidebar-wrapper .head{
+    width: 150px;
+    height: 150px;
+    margin: 0 30px;
+}
+
+#sidebar-wrapper dl dt{
+    margin-top: 4px;
+}
+
+#sidebar-wrapper dl dd{
+    margin-top: 4px;
+}
+
+#toolbar{
+    right: 0px;
+    top: 0px;
+}
+
+/* content styling */
+#main-content .row{
+    margin-top: 2%;    
+}
+
+#content-left blockquote{
+    position: relative;
+}
+
+#change-content-quote{
+    position: absolute;
+    right: 50px;
+    bottom: 0px;
+    text-decoration: none;
+}
+
+#message-board{
+    height: 300px;
+    border-bottom: 1px solid #B9B9B9;
+    overflow-y: auto;
+}
+
+#message-board dl{
+    width:100%;
+    border-top: 1px solid #B9B9B9;
+}
+
+#message-board dl dt{
+    width: 90%;
+    margin: 0 auto;
+}
+#message-board dl dd{
+    width: 70%;
+    border-bottom: 1px solid #B9B9B9;
+}
+
+.message-board-form-wrapper{
+    margin-top: 10px;
+}
